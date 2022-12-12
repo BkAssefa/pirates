@@ -129,3 +129,20 @@ class Drowned(Monster):
         #7 to 19 hp, bite attack, 65 to 85 speed (100 is "normal")
         super().__init__(name, random.randrange(7,20), attacks, 75 + random.randrange(-10,11))
 
+class Scorpion(Monster):
+    def __init__ (self, name):
+        attacks = {}
+        attacks["sting"] = ["stings",random.randrange(70,101), (10,20)]
+        #7 to 19 hp, bite attack, 160 to 200 speed (100 is "normal")
+        super().__init__(name, random.randrange(7,20), attacks, 180 + random.randrange(-20,21))
+
+class Dragon(Monster):
+    def __init__ (self, name):
+        attacks = {}
+        attacks["bite"] = ["bites",random.randrange(60,80), (30,40)]
+        attacks["claw"] = ["uses its claw to slash",random.randrange(50,60), (30,40)]
+        attacks["breath fire"] = ["is breathing fire on",random.randrange(20,30), (40,50)]
+        #7 to 19 hp, bite attack, 85 to 95 speed (100 is "normal")
+        super().__init__(name, random.randrange(150,200), attacks, 90 + random.randrange(-5,6))
+
+
