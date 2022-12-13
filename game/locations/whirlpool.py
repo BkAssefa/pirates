@@ -27,7 +27,7 @@ class Whirlpool (Context, location.Location):
         self.locations["room3"] = Room3(self)
         self.locations["room4"] = Room4(self)
         self.locations["room5"] = Room5(self)
-        self.starting_location = self.locations["room5"]
+        self.starting_location = self.locations["room1"]
     def enter (self, ship):
         self.symbol = "W"
         self.ship = ship
